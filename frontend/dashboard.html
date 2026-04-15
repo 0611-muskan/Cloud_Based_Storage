@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script>
+  if (!localStorage.getItem("token")) {
+    alert("Please login first");
+    window.location.href = "index.html";
+  }
+</script>
+
+<div class="header">☁️ Cloud Storage Dashboard</div>
+
+<div class="container">
+
+  <div class="card">
+    <input type="file" id="fileInput">
+    <button class="btn-primary" onclick="uploadFile()">Upload</button>
+    <button class="btn-dark" onclick="logout()">Logout</button>
+  </div>
+
+  <h3>Your Files</h3>
+
+  <ul id="fileList"></ul>
+
+  <p id="shareLink"></p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
