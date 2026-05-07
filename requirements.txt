@@ -1,0 +1,20 @@
+# Global Requirements for Cloud Based App
+# Both Backend (Flask) and Frontend (Streamlit)
+
+# Core Backend - Flask
+Flask==3.0.0
+Flask-CORS==4.0.0
+Werkzeug==3.0.1
+
+# Core Frontend - Streamlit
+streamlit==1.28.1
+
+# AWS Integration
+boto3==1.28.85
+python-dotenv==1.0.0
+
+# HTTP & Utilities
+requests==2.31.0
+
+# Authentication
+PyJWT==2.8.1
